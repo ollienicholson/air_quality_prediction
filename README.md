@@ -28,7 +28,7 @@ To run this project, you need the following Python packages:
 Once you have generated the required packages using `pip freeze`, you can install these packages using the provided `requirements.txt` file:
 
 ```sh
-pip freeze >requirements.txt
+pip freeze > requirements.txt
 
 pip install -r requirements.txt
 ```
