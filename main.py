@@ -1,3 +1,4 @@
+import os
 from metaflow import FlowSpec, step
 from sklearn.metrics import mean_squared_error
 from sklearn.ensemble import RandomForestRegressor
@@ -6,6 +7,12 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import requests
 import pandas as pd
+
+
+# Create the data directory if it doesn't exist
+if not os.path.exists('data'):
+    os.makedirs('data')
+
 
 # Function to fetch data from OpenAQ API
 
@@ -53,7 +60,10 @@ def plot_data(data):
     plt.title('Daily Average AQI Levels')
     plt.xlabel('Date')
     plt.ylabel('AQI')
-    plt.show()
+    # plt.show()
+    # Save the plot to the data directory
+    plt.savefig('data/aqi_prediction.png')
+    plt.close()
 
 
 # plot_data(cleaned_data)
@@ -96,7 +106,11 @@ def predict_and_plot(model, data):
     plt.xlabel('Date')
     plt.ylabel('AQI')
     plt.legend()
-    plt.show()
+    # plt.show()
+
+    # Save the plot to the data directory
+    plt.savefig('data/aqi_prediction.png')
+    plt.close()
 
 
 # predict_and_plot(model, cleaned_data)
