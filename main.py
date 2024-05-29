@@ -23,16 +23,15 @@ def fetch_data(city, start_date, end_date):
     return pd.DataFrame(data)
 
 
-# Fetch data for a specific city and date range
-city = 'Los Angeles'
-start_date = '2023-01-01'
-end_date = '2023-12-31'
-data = fetch_data(city, start_date, end_date)
+# # Fetch data for a specific city and date range
+# city = 'Los Angeles'
+# start_date = '2023-01-01'
+# end_date = '2023-12-31'
+# data = fetch_data(city, start_date, end_date)
 
 
 def clean_data(data):
     data = data[['date', 'value', 'unit', 'parameter']]
-    print(data['date'])
     # data['date'] = pd.to_datetime(data['date']['utc']) # could not extract the date['utc] due to the nested dict
 
     # Normalize the nested 'date' dictionary to extract 'utc' values
@@ -45,7 +44,7 @@ def clean_data(data):
     return data.dropna()
 
 
-cleaned_data = clean_data(data)
+# cleaned_data = clean_data(data)
 
 
 def plot_data(data):
@@ -57,7 +56,7 @@ def plot_data(data):
     plt.show()
 
 
-plot_data(cleaned_data)
+# plot_data(cleaned_data)
 
 
 # Function to train the model
@@ -81,7 +80,7 @@ def train_model(data):
     return model
 
 
-model = train_model(cleaned_data)
+# model = train_model(cleaned_data)
 
 
 def predict_and_plot(model, data):
@@ -100,7 +99,7 @@ def predict_and_plot(model, data):
     plt.show()
 
 
-predict_and_plot(model, cleaned_data)
+# predict_and_plot(model, cleaned_data)
 
 
 class AQIPredictionFlow(FlowSpec):
