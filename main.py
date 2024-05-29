@@ -59,6 +59,7 @@ def plot_data(data):
 
 plot_data(cleaned_data)
 
+
 # Function to train the model
 
 
