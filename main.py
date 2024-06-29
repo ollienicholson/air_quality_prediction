@@ -123,12 +123,7 @@ def plot_data(data):
     plt.close()
 
 
-# plot_data(cleaned_data)
-
-
 # Function to train the model
-
-
 def train_model(data):
     data['day_of_year'] = data.index.dayofyear
     X = data[['day_of_year']]
