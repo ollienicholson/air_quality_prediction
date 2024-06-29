@@ -1,2 +1,10 @@
 # metaflow
 .metaflow
+
+# pycache
+*.pyc
+
+*.png
+
+# csv outputs
+*.csv

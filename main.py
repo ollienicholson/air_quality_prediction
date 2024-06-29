@@ -16,53 +16,96 @@ if not os.path.exists('data'):
 
 
 # Function to fetch data from OpenAQ API
-
-
-def fetch_data(city, start_date, end_date, retries=3):
-    url = f'https://api.openaq.org/v1/measurements'
+def fetch_data(
+        city: str, 
+        start_date: str, 
+        end_date: str, 
+        limit: int, 
+        retries=3
+        ):
+    '''
+    Fetches air quality data by city from OpenAQ API.
+    - Set params: 
+        - City: array[string]
+        - Start date / End date: datetime
+        - number of retries: int
+    - Get results
+    - Returns a Pandas DataFrame
+    API docs: https://docs.openaq.org/docs/introduction
+    '''
+    url = f'https://api.openaq.org/v2/measurements'
     params = {
         'city': city,
         'date_from': start_date,
         'date_to': end_date,
-        'limit': 10000
+        'limit': limit,
+        'retries': retries
     }
     for attempt in range(retries):
         try:
-            response = requests.get(url, params=params, timeout=10)  # Adjust timeout as needed
+            response = requests.get(url, params=params, timeout=10)  # Adjust timeout (seconds) as needed
             response.raise_for_status()  # Raise exception for HTTP errors
             data = response.json()['results']
             df = pd.DataFrame(data)
-            filename = 'MEL_data.csv'
-            df.to_csv(filename)
+            
+            filename = f'{city}_data.csv'
+            df.to_csv(filename) # Output the raw data to csv
+            
             return df
+
         except requests.exceptions.RequestException as e:
             print(f"Attempt {attempt + 1} failed: {e}")
             if attempt < retries - 1:
                 print("Retrying...")
-                time.sleep(1)  # Wait before retrying
+                time.sleep(1)  # Wait 1 second before retrying
             else:
                 raise  # Raise exception if all retries fail
 
 
 # Fetch data for a specific city and date range
 city = 'Melbourne'
-start_date = '2023-01-01'
+start_date = '2021-01-01'
 end_date = '2023-12-31'
-data = fetch_data(city, start_date, end_date)
+limit = 12000
+data = fetch_data(city, start_date, end_date, limit)
 
 
-def clean_data(data):
+def clean_data(data: pd.DataFrame) -> pd.DataFrame:
+    '''
+    Cleans DataFrame containing air quality measurement data.
+    
+    See below for more info:
+    
+    - Select relevant columns for visualisations, training and prediction model 
+        - date: AEST, 
+        - value: float, 
+        - unit: µg/m³ (micrograms per cubic meter)
+        - parameter: PM25
+    - Normalize 'date' column
+    - Convert dates and assign
+    - Pivot table pivots the DataFrame data so that:
+        - Each unique 'date' becomes an index - AEST
+        - Each unique 'parameter' becomes a column - PM2.5
+        - The 'value' associated with each combination of 'date' and 'parameter' is placed in the corresponding cell of the pivoted DataFrame.
+    - Resample to daily averages
+    - Drop NaN values
+    - Returns a DataFrame
+    '''
     data = data[['date', 'value', 'unit', 'parameter']]
-    # data['date'] = pd.to_datetime(data['date']['utc']) # could not extract the date['utc] due to the nested dict
-
+    
     # Normalize the nested 'date' dictionary to extract 'utc' values
     date_utc = pd.json_normalize(data['date'])['utc']
 
     # Convert the extracted 'utc' dates to pandas datetime objects and assign using .loc
     data.loc[:, 'date'] = pd.to_datetime(date_utc)
     data = data.pivot_table(index='date', columns='parameter', values='value')
-    data = data.resample('D').mean()  # Resample to daily averages
-    return data.dropna()
+    
+    # Resample to daily averages
+    data = data.resample('D').mean()
+    
+    data = data.dropna()
+    
+    return data
 
 
 cleaned_data = clean_data(data)
@@ -76,7 +119,7 @@ def plot_data(data):
     plt.ylabel('AQI')
     # plt.show()
     # Save the plot to the data directory
-    plt.savefig('data/aqi_prediction.png')
+    plt.savefig('aqi_prediction.png')
     plt.close()
 
 
@@ -130,39 +173,39 @@ def predict_and_plot(model, data):
 # predict_and_plot(model, cleaned_data)
 
 
-class AQIPredictionFlow(FlowSpec):
+# class AQIPredictionFlow(FlowSpec):
 
-    @step
-    def start(self):
-        self.city = 'Los Angeles'
-        self.start_date = '2023-01-01'
-        self.end_date = '2023-12-31'
-        self.next(self.fetch_data)
+#     @step
+#     def start(self):
+#         self.city = 'Melbour'
+#         self.start_date = '2023-01-01'
+#         self.end_date = '2023-12-31'
+#         self.next(self.fetch_data)
 
-    @step
-    def fetch_data(self):
-        self.data = fetch_data(self.city, self.start_date, self.end_date)
-        self.next(self.clean_data)
+#     @step
+#     def fetch_data(self):
+#         self.data = fetch_data(self.city, self.start_date, self.end_date)
+#         self.next(self.clean_data)
 
-    @step
-    def clean_data(self):
-        self.cleaned_data = clean_data(self.data)
-        self.next(self.train_model)
+#     @step
+#     def clean_data(self):
+#         self.cleaned_data = clean_data(self.data)
+#         self.next(self.train_model)
 
-    @step
-    def train_model(self):
-        self.model = train_model(self.cleaned_data)
-        self.next(self.predict_and_plot)
+#     @step
+#     def train_model(self):
+#         self.model = train_model(self.cleaned_data)
+#         self.next(self.predict_and_plot)
 
-    @step
-    def predict_and_plot(self):
-        predict_and_plot(self.model, self.cleaned_data)
-        self.next(self.end)
+#     @step
+#     def predict_and_plot(self):
+#         predict_and_plot(self.model, self.cleaned_data)
+#         self.next(self.end)
 
-    @step
-    def end(self):
-        print("AQI prediction pipeline complete.")
+#     @step
+#     def end(self):
+#         print("AQI prediction pipeline complete.")
 
 
-if __name__ == '__main__':
-    AQIPredictionFlow()
+# if __name__ == '__main__':
+#     AQIPredictionFlow()
