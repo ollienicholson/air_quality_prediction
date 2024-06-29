@@ -1,8 +1,2 @@
-# reqs
-requirements.txt
-
 # metaflow
 .metaflow
-
-# outputs
-data
