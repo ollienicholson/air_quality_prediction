@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ├── main.py                 # Metaflow pipeline script
 ├── requirements.txt        # List of required packages
 ├── README.md               # Project README file
-└── data                    # Directory to store fetched data (optional)
+└── outputs                 # Directory created to dynamically store fetched data (optional)
 ```
 
 ## Data Ingestion
@@ -75,8 +75,8 @@ class AQIPredictionFlow(FlowSpec):
 
     @step
     def start(self):
-        self.city = 'Los Angeles'
-        self.start_date = '2023-01-01'
+        self.city = 'Melbourne'
+        self.start_date = '2021-01-01'
         self.end_date = '2023-12-31'
         self.next(self.fetch_data)
 
@@ -115,9 +115,21 @@ if __name__ == '__main__':
     pip install -r requirements.txt
     ```
 
+2. **Run the Python script**:
+    ```sh
+    python3 main.py
+    ```
+
+**Optional alternatives**
+
+2. **Run the Jupyter Notebook script**:
+    ```sh
+    python3 main.ipynb run
+    ```
+
 2. **Run the Metaflow pipeline**:
     ```sh
-    python main.py run
+    python3 data_flow.py run
     ```
 
 ## Results

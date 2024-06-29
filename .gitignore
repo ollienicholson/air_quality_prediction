@@ -1,8 +1,11 @@
-# metaflow
+# metaflow runs
 .metaflow
 
 # pycache
 *.pyc
+
+MacOS files
+.DS_Store
 
 *.png
 
