@@ -7,6 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import requests
 import pandas as pd
+import time
 
 
 # Create the data directory if it doesn't exist
@@ -17,7 +18,7 @@ if not os.path.exists('data'):
 # Function to fetch data from OpenAQ API
 
 
-def fetch_data(city, start_date, end_date):
+def fetch_data(city, start_date, end_date, retries=3):
     url = f'https://api.openaq.org/v1/measurements'
     params = {
         'city': city,
@@ -25,16 +26,29 @@ def fetch_data(city, start_date, end_date):
         'date_to': end_date,
         'limit': 10000
     }
-    response = requests.get(url, params=params)
-    data = response.json()['results']
-    return pd.DataFrame(data)
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, params=params, timeout=10)  # Adjust timeout as needed
+            response.raise_for_status()  # Raise exception for HTTP errors
+            data = response.json()['results']
+            df = pd.DataFrame(data)
+            filename = 'MEL_data.csv'
+            df.to_csv(filename)
+            return df
+        except requests.exceptions.RequestException as e:
+            print(f"Attempt {attempt + 1} failed: {e}")
+            if attempt < retries - 1:
+                print("Retrying...")
+                time.sleep(1)  # Wait before retrying
+            else:
+                raise  # Raise exception if all retries fail
 
 
-# # Fetch data for a specific city and date range
-# city = 'Los Angeles'
-# start_date = '2023-01-01'
-# end_date = '2023-12-31'
-# data = fetch_data(city, start_date, end_date)
+# Fetch data for a specific city and date range
+city = 'Melbourne'
+start_date = '2023-01-01'
+end_date = '2023-12-31'
+data = fetch_data(city, start_date, end_date)
 
 
 def clean_data(data):
@@ -51,7 +65,7 @@ def clean_data(data):
     return data.dropna()
 
 
-# cleaned_data = clean_data(data)
+cleaned_data = clean_data(data)
 
 
 def plot_data(data):

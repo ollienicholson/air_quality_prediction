@@ -25,7 +25,7 @@ To run this project, you need the following Python packages:
 - seaborn
 - metaflow
 
-Once you have generated the required packages using `pip freeze`, you can install these packages using the provided `requirements.txt` file:
+Once you have generated a list of the required packages using `pip freeze`, you can install these packages by using the provided `requirements.txt` file. Run the following commands:
 
 ```sh
 pip freeze > requirements.txt
