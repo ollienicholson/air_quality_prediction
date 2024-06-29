@@ -10,9 +10,14 @@ import pandas as pd
 import time
 
 
-# Create the data directory if it doesn't exist
-if not os.path.exists('data'):
-    os.makedirs('data')
+# Create image output directory if it doesn't exist
+if not os.path.exists('image_outputs'):
+    os.makedirs('image_outputs')
+    
+
+# Create csv output directory if it doesn't exist
+if not os.path.exists('csv_outputs'):
+    os.makedirs('csv_outputs')
 
 
 # Function to fetch data from OpenAQ API
@@ -62,13 +67,10 @@ def fetch_data(
                 raise  # Raise exception if all retries fail
 
 
-# Fetch data for a specific city and date range
-city = 'Melbourne'
-start_date = '2021-01-01'
-end_date = '2023-12-31'
-limit = 12000
-data = fetch_data(city, start_date, end_date, limit)
 
+
+
+# **Cleaning data**
 
 def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     '''
@@ -91,116 +93,144 @@ def clean_data(data: pd.DataFrame) -> pd.DataFrame:
     - Drop NaN values
     - Returns a DataFrame
     '''
-    data = data[['date', 'value', 'unit', 'parameter']]
-    
-    # Normalize the nested 'date' dictionary to extract 'utc' values
-    date_utc = pd.json_normalize(data['date'])['utc']
+    try:
+        data = data[['date', 'value', 'unit', 'parameter']]
+        
+        # Normalize the nested 'date' dictionary to extract 'utc' values
+        date_utc = pd.json_normalize(data['date'])['utc']
 
-    # Convert the extracted 'utc' dates to pandas datetime objects and assign using .loc
-    data.loc[:, 'date'] = pd.to_datetime(date_utc)
-    data = data.pivot_table(index='date', columns='parameter', values='value')
-    
-    # Resample to daily averages
-    data = data.resample('D').mean()
-    
-    data = data.dropna()
-    
-    return data
+        # Convert the extracted 'utc' dates to pandas datetime objects and assign using .loc
+        data.loc[:, 'date'] = pd.to_datetime(date_utc)
+        data = data.pivot_table(index='date', columns='parameter', values='value')
+        
+        # Resample to daily averages
+        data = data.resample('D').mean()
+        
+        data = data.dropna()
+        
+        return data
+    except Exception as e:
+        print(f"ERROR: Could not clean data: {e}")
 
 
-cleaned_data = clean_data(data)
+# **Basic Visuals**
 
-
-def plot_data(data):
+def plot_data(data: pd.DataFrame, city):
+    '''
+    NOTE: update function description
+    '''
     plt.figure(figsize=(12, 6))
     sns.lineplot(data=data)
     plt.title('Daily Average AQI Levels')
     plt.xlabel('Date')
     plt.ylabel('AQI')
-    # plt.show()
+    plt.tight_layout()
+    plt.show()
+
+    # Define the base filename
+    base_filename = f"{city}_aqi_daily_averages.png"
+    
+    # Check if the file exists and increment the counter if needed
+    counter = 1
+    while os.path.exists(base_filename):
+        base_filename = f"{city}_aqi_daily_averages_{counter}.png"
+        counter += 1
+    
     # Save the plot to the data directory
-    plt.savefig('aqi_prediction.png')
-    plt.close()
+    plt.savefig(f"image_outputs/{base_filename}")
 
 
-# Function to train the model
+# **Training the model**
+
 def train_model(data):
-    data['day_of_year'] = data.index.dayofyear
-    X = data[['day_of_year']]
-    y = data['pm25']
+    '''
+    Trains a RandomForestRegressor model to predict PM2.5 levels based on day of the year.
+    
+    Args:
+    - data: DataFrame containing time-series data with 'pm25' values and a datetime index.
+    
+    Returns:
+    - model: Trained RandomForestRegressor model.
+    
+    Prints:
+    - Mean Squared Error (MSE) of the model on test data.
+    
+    Note:
+    - The 'day_of_year' feature is extracted from the datetime index for modeling.
+    '''
+    
+    try:
+        data['day_of_year'] = data.index.dayofyear
+        X = data[['day_of_year']]
+        y = data['pm25']
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42)
+        X_train, X_test, y_train, y_test = train_test_split(
+            X, y, test_size=0.2, random_state=42)
 
-    model = RandomForestRegressor(n_estimators=100, random_state=42)
-    model.fit(X_train, y_train)
+        model = RandomForestRegressor(n_estimators=100, random_state=42)
+        model.fit(X_train, y_train)
 
-    y_pred = model.predict(X_test)
-    mse = mean_squared_error(y_test, y_pred)
-    print(f'Mean Squared Error: {mse}')
+        y_pred = model.predict(X_test)
+        mse = mean_squared_error(y_test, y_pred)
+        print(f'Mean Squared Error: {mse}')
 
-    return model
-
-
-# model = train_model(cleaned_data)
-
-
-def predict_and_plot(model, data):
-    future_dates = pd.date_range(start=data.index[-1], periods=30)
-    future_data = pd.DataFrame(
-        {'day_of_year': future_dates.dayofyear}, index=future_dates)
-    predictions = model.predict(future_data)
-
-    plt.figure(figsize=(12, 6))
-    sns.lineplot(x=future_dates, y=predictions, label='Predicted AQI')
-    sns.lineplot(data=data['pm25'], label='Historical AQI')
-    plt.title('AQI Prediction for Next 30 Days')
-    plt.xlabel('Date')
-    plt.ylabel('AQI')
-    plt.legend()
-    # plt.show()
-
-    # Save the plot to the data directory
-    plt.savefig('data/aqi_prediction.png')
-    plt.close()
+        return model
+    
+    except Exception as e:
+        print(f"ERROR: {e}")
 
 
-# predict_and_plot(model, cleaned_data)
+
+def predict_and_plot(model, data, city):
+    '''
+    NOTE: update function description
+    '''
+    try:
+        future_dates = pd.date_range(start=data.index[-1], periods=360)
+        future_data = pd.DataFrame(
+            {'day_of_year': future_dates.dayofyear}, index=future_dates)
+        predictions = model.predict(future_data)
+
+        plt.figure(figsize=(12, 6))
+        sns.lineplot(x=future_dates, y=predictions, label='Predicted AQI')
+        sns.lineplot(data=data['pm25'], label='Historical AQI')
+        plt.title('AQI Prediction for Next 360 Days')
+        plt.xlabel('Date')
+        plt.ylabel('AQI')
+        plt.tight_layout()
+        plt.legend()
+        plt.show()
+
+        # Save the plot to the data directory
+        plt.savefig(f'image_outputs/{city}_aqi_prediction.png')
+    
+    except Exception as e:
+        print(f"ERROR: {e}")
 
 
-# class AQIPredictionFlow(FlowSpec):
-
-#     @step
-#     def start(self):
-#         self.city = 'Melbour'
-#         self.start_date = '2023-01-01'
-#         self.end_date = '2023-12-31'
-#         self.next(self.fetch_data)
-
-#     @step
-#     def fetch_data(self):
-#         self.data = fetch_data(self.city, self.start_date, self.end_date)
-#         self.next(self.clean_data)
-
-#     @step
-#     def clean_data(self):
-#         self.cleaned_data = clean_data(self.data)
-#         self.next(self.train_model)
-
-#     @step
-#     def train_model(self):
-#         self.model = train_model(self.cleaned_data)
-#         self.next(self.predict_and_plot)
-
-#     @step
-#     def predict_and_plot(self):
-#         predict_and_plot(self.model, self.cleaned_data)
-#         self.next(self.end)
-
-#     @step
-#     def end(self):
-#         print("AQI prediction pipeline complete.")
+# Fetch data for a specific city and date range
+city = 'Melbourne'
+start_date = '2021-01-01'
+end_date = '2023-12-31'
+limit = 12000
 
 
-# if __name__ == '__main__':
-#     AQIPredictionFlow()
+print("Fetching data...")
+data = fetch_data(city, start_date, end_date, limit)
+
+
+print("Cleaning data...")
+cleaned_data = clean_data(data)
+
+
+print("Plotting data...")
+print("Close image to continue...")
+plot_data(cleaned_data, city)
+
+
+print("Training model...")
+model = train_model(cleaned_data)
+
+
+print("Running Predict and Plot...")
+predict_and_plot(model, cleaned_data, city)
