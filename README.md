@@ -1,7 +1,7 @@
 
 # Air Quality Index (AQI) Prediction Project
 
-This project aims to analyze historical air quality data, identify trends, and build a model to predict future AQI levels. The project leverages Metaflow for workflow orchestration, alongside other Python libraries for data manipulation, visualisation, and machine learning.
+This project aims to analyse historical air quality data, identify trends, and build a model to predict future AQI levels. The project leverages Metaflow for workflow orchestration, alongside other Python libraries for data manipulation, visualisation, and machine learning.
 
 ## Project Overview
 
