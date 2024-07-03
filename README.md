@@ -1,7 +1,7 @@
 
 # Air Quality Index (AQI) Prediction Project
 
-This project aims to analyze historical air quality data, identify trends, and build a model to predict future AQI levels. The project leverages Metaflow for workflow orchestration, alongside other Python libraries for data manipulation, visualization, and machine learning.
+This project aims to analyze historical air quality data, identify trends, and build a model to predict future AQI levels. The project leverages Metaflow for workflow orchestration, alongside other Python libraries for data manipulation, visualisation, and machine learning.
 
 ## Project Overview
 
@@ -12,7 +12,7 @@ The main steps of this project include:
 3. **Data Analysis**: Performing exploratory data analysis (EDA) to identify trends and patterns.
 4. **Model Training**: Training a machine learning model to predict AQI.
 5. **Model Evaluation**: Evaluating the model's performance.
-6. **Prediction and Visualization**: Making predictions and visualizing the results.
+6. **Prediction and Visualisation**: Making predictions and visualising the results.
 
 ## Requirements
 
@@ -60,7 +60,7 @@ The `clean_data` function processes the raw data by:
 
 The `train_model` function trains a RandomForestRegressor on the cleaned data to predict PM2.5 levels, using the day of the year as the feature.
 
-## Prediction and Visualization
+## Prediction and Visualisation
 
 The `predict_and_plot` function generates future dates, predicts their AQI values using the trained model, and plots both historical and predicted AQI values.
 
@@ -137,8 +137,8 @@ if __name__ == '__main__':
 The project outputs include:
 
 - Cleaned and preprocessed air quality data.
-- Visualizations of historical AQI trends.
-- Predictions of future AQI levels and their visualization.
+- Visualisations of historical AQI trends.
+- Predictions of future AQI levels and their visualisation.
 
 ## Acknowledgements
 
