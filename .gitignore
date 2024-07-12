@@ -12,3 +12,6 @@ MacOS files
 
 # csv outputs
 *.csv
+
+# TODO list
+todo.txt
