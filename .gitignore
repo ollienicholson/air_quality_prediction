@@ -16,8 +16,9 @@ MacOS files
 # TODO list
 todo.txt
 
-# pip requirements
-requirements.txt
-
 # conda requirements
 environment.yml
+
+# cron job log files
+# scheduled daily 10:30am
+/logs
