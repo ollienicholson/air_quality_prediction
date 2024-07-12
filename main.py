@@ -234,3 +234,5 @@ model = train_model(cleaned_data)
 
 print("Running Predict and Plot...")
 predict_and_plot(model, cleaned_data, city)
+
+print("Completed")

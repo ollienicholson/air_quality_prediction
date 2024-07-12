@@ -111,9 +111,12 @@ if __name__ == '__main__':
 ## How to Run
 
 1. **Install the dependencies**:
-    ```sh
-    pip install -r requirements.txt
+    ```sh 
+    conda env create -f environment.yml
     ```
+
+This command ensures that all conda and pip packages are installed as specified in the environment.yml file.
+
 
 2. **Run the Python script**:
     ```sh

@@ -8,10 +8,16 @@ __pycache__
 MacOS files
 .DS_Store
 
-*.png
 
 # csv outputs
 *.csv
+*.png
 
 # TODO list
 todo.txt
+
+# pip requirements
+requirements.txt
+
+# conda requirements
+environment.yml
