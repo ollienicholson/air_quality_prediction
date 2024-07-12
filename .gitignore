@@ -2,6 +2,7 @@
 .metaflow
 
 # pycache
+__pycache__
 *.pyc
 
 MacOS files
