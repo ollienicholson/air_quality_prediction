@@ -8,6 +8,8 @@ import requests
 import pandas as pd
 import time
 
+from helpers.helpers import save_file
+
 # Function to fetch data from OpenAQ API
 def fetch_city_data(
         city: str, 
@@ -15,7 +17,7 @@ def fetch_city_data(
         end_date: str, 
         limit: int, 
         retries=3
-        ):
+        ) -> pd.DataFrame | None:
     '''
     Fetches air quality data by city from OpenAQ API.
     - Set params: 
@@ -53,7 +55,7 @@ def fetch_city_data(
                 print("Retrying...")
                 time.sleep(1)  # Wait 1 second before retrying
             else:
-                raise  # Raise exception if all retries fail
+                raise # re-raises last exception if all retries fail
 
 
 
@@ -84,6 +86,7 @@ def clean_city_data(data: pd.DataFrame) -> pd.DataFrame:
     '''
     try:
         print("Cleaning city data...")
+        
         data = data[['date', 'value', 'unit', 'parameter']]
         
         # Normalize the nested 'date' dictionary to extract 'utc' values
@@ -106,36 +109,30 @@ def clean_city_data(data: pd.DataFrame) -> pd.DataFrame:
 
 # **Basic Visuals**
 
-def plot_city_data(data: pd.DataFrame, city:str) -> None:
+def plot_city_data(data: pd.DataFrame, city:str, dir_name: str) -> None:
     '''
     Generate and save city data plot
     '''
-    plt.figure(figsize=(12, 6))
-    sns.lineplot(data=data)
-    plt.title('Daily Average AQI Levels')
-    plt.xlabel('Date')
-    plt.ylabel('AQI')
-    plt.tight_layout()
+    try:
+        print("Plotting city data...")
+        
+        plt.figure(figsize=(12, 6))
+        sns.lineplot(data=data)
+        plt.title('Daily Average AQI Levels')
+        plt.xlabel('Date')
+        plt.ylabel('AQI')
+        plt.tight_layout()
 
-    # Define the base filename
-    base_filename = f"{city}_aqi_daily_averages.png"
-    
-    # Check if the file exists and increment the counter if needed
-    counter = 1
-    while os.path.exists(base_filename):
-        base_filename = f"{city}_aqi_daily_averages_{counter}.png"
-        counter += 1
-    
-    # Save the plot to the data directory
-    plt.savefig(f"image_outputs/{base_filename}")
-    # plt.show()
-    plt.close()
-    print("Plotting city data...")
+        # pass directory name, function_name & city to save file
+        file_name = 'aqi_daily_averages'
+        save_file(dir_name, file_name, city)
 
+    except Exception as e:
+        print(f"plot_city_data ERROR {e}")
 
 # **Training Random Fores tRegressor model**
 
-def train_RandomForestRegressor_model(data):
+def train_RandomForestRegressor_model(data: pd.DataFrame):
     '''
     Trains Random Forest Regressor model to predict PM2.5 levels based on day of the year.
     
@@ -176,9 +173,9 @@ def train_RandomForestRegressor_model(data):
 
 
 
-def city_predict_and_plot(model, data, city):
+def city_predict_and_plot(model, data: pd.DataFrame, city: str, dir_name: str) -> None:
     '''
-    NOTE: update function description
+    Performs predictions on future air quality index
     '''
     try:
         print("Running prediction and plot for city data...")
@@ -196,12 +193,10 @@ def city_predict_and_plot(model, data, city):
         plt.ylabel('AQI')
         plt.tight_layout()
         plt.legend()
-        # plt.show()
-
-        # Save the plot to the data directory
-        plt.savefig(f'image_outputs/{city}_aqi_prediction.png')
-    
-        plt.close()
+        
+        file_name = 'aqi_prediction'
+        # pass directory name, file_name & city to save file
+        save_file(dir_name, file_name, city)
         
     except Exception as e:
-        print(f"ERROR: {e}")
+        print(f"city_predict_and_plot ERROR: {e}")
