@@ -16,7 +16,7 @@ img
 *.png
 
 # TODO list
-todo.txt
+# todo.txt
 
 # conda requirements
 environment.yml
