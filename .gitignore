@@ -20,7 +20,7 @@ todo.txt
 
 # conda requirements
 environment.yml
-requirements.txt
+# requirements.txt
 
 # cron job log files
 # scheduled daily 10:30am
