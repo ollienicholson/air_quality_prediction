@@ -17,7 +17,8 @@ def fetch_city_data(
         start_date: str, 
         end_date: str, 
         limit: int, 
-        retries: int
+        retries: int,
+        dir_name: str
         ) -> pd.DataFrame | None:
     '''
     Fetches air quality data by city from OpenAQ API.
@@ -45,7 +46,7 @@ def fetch_city_data(
             data = response.json()['results']
             df = pd.DataFrame(data)
             
-            filename = f'{city}_data.csv'
+            filename = f'{dir_name}/{city}_data.csv'
             df.to_csv(filename) # Output the raw data to csv
             
             return df
