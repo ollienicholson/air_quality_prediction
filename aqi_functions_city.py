@@ -1,12 +1,13 @@
-import os
-from sklearn.metrics import mean_squared_error
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
-import seaborn as sns
+import time 
+
 import matplotlib.pyplot as plt
-import requests
 import pandas as pd
-import time
+import requests
+import seaborn as sns
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
 
 from helpers.helpers import save_file
 
@@ -16,7 +17,7 @@ def fetch_city_data(
         start_date: str, 
         end_date: str, 
         limit: int, 
-        retries=3
+        retries: int
         ) -> pd.DataFrame | None:
     '''
     Fetches air quality data by city from OpenAQ API.
@@ -173,14 +174,14 @@ def train_RandomForestRegressor_model(data: pd.DataFrame):
 
 
 
-def city_predict_and_plot(model, data: pd.DataFrame, city: str, dir_name: str) -> None:
+def city_predict_and_plot(model, data: pd.DataFrame, city: str, dir_name: str, days: int) -> None:
     '''
     Performs predictions on future air quality index
     '''
     try:
         print("Running prediction and plot for city data...")
         
-        future_dates = pd.date_range(start=data.index[-1], periods=360)
+        future_dates = pd.date_range(start=data.index[-1], periods=days)
         future_data = pd.DataFrame(
             {'day_of_year': future_dates.dayofyear}, index=future_dates)
         predictions = model.predict(future_data)
@@ -188,7 +189,7 @@ def city_predict_and_plot(model, data: pd.DataFrame, city: str, dir_name: str) -
         plt.figure(figsize=(12, 6))
         sns.lineplot(x=future_dates, y=predictions, label='Predicted AQI')
         sns.lineplot(data=data['pm25'], label='Historical AQI')
-        plt.title('AQI Prediction for Next 360 Days')
+        plt.title(f"{city} AQI Prediction for next 360 Days")
         plt.xlabel('Date')
         plt.ylabel('AQI')
         plt.tight_layout()

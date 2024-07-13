@@ -9,7 +9,9 @@ MacOS files
 .DS_Store
 
 
-# csv outputs
+# outputs
+csv
+img
 *.csv
 *.png
 
