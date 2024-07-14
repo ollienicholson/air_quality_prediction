@@ -15,8 +15,8 @@ img
 *.csv
 *.png
 
-# TODO list
-# todo.txt
+# TODO lists & notes
+# .txt
 
 # conda requirements
 environment.yml

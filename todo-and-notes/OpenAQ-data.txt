@@ -1,0 +1,21 @@
+The OpenAQ API provides access to a variety of air quality data that can be useful for both research and practical applications. Here are the main types of data you can pull from the OpenAQ API:
+
+1. **Air Quality Measurements**: 
+This is the core data provided by OpenAQ, which includes real-time and historical measurements of various air pollutants, such as PM2.5, PM10, sulfur dioxide (SO2), carbon monoxide (CO), ozone (O3), and nitrogen dioxide (NO2). Measurements are provided with timestamps and can be queried by location, date range, and specific pollutant.
+
+2. **Locations**: 
+You can retrieve information about monitoring stations, including their geographical coordinates (latitude and longitude), the country and city they are located in, and the number of measurements recorded at each location. This can help in understanding the spatial distribution of monitoring stations and the coverage of air quality data in different regions.
+
+3. **Cities and Countries**: 
+The API allows querying the air quality data grouped by cities or countries. This includes the aggregated measurements and metadata for cities and countries, which can be useful for regional analysis and comparisons.
+
+4. **Latest Data**: 
+There is an endpoint for fetching the latest air quality data across the entire network or for specific locations. This is particularly useful for applications requiring real-time air quality updates.
+
+5. **Aggregated Statistics**: 
+OpenAQ provides endpoints to access aggregated statistics over specified time intervals (daily, monthly). These statistics can include averages, minimum and maximum values of pollutants, which are useful for trend analysis and long-term air quality assessments.
+
+6. **Sources**: 
+Information about the data sources, including details about the organizations, networks, or entities that provide the air quality data to OpenAQ. This can be important for data verification, reliability assessments, and understanding the scope of the data collection efforts.
+
+By utilizing these data points, you can conduct comprehensive analyses on air quality trends, perform predictive modeling, or develop applications that alert users about air quality changes in real time. The OpenAQ API is particularly valuable for environmental scientists, researchers, public health officials, and technology developers working on environmental monitoring tools.

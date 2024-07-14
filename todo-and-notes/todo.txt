@@ -3,19 +3,12 @@ To-do list @ 13th July 2024
 
 sort list below based on priority
 
-- basic web interface
-
-- find out what you can do with air quality data re: ML
-
-- find out what other data you can call from the OpenAQ API
 
 - run another model in another flow branch before joining flow to determine the best prediction model?
 
 - get this to run this on lightweight website locally
 
-- write a CRON job to run this automatically once a week - and return results to the browser?
-
-- cron job logs to local repo
+return results to the browser when user inteacts with model
 
 - have a button for the user to press run
 
@@ -26,6 +19,8 @@ sort list below based on priority
 - let the user choose from a list of graph options as output
 
 - have the results display for the user
+
+- display updated data visualisations in browser
 
 - see what the terminal returns except in the browser
 
