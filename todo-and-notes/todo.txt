@@ -32,4 +32,5 @@ return results to the browser when user inteacts with model
 
 - get aws RDMS  up and running and store result data in there
 
-- set up custom log file location for cron jobs in local repo
+- display this data in looker studio
+
