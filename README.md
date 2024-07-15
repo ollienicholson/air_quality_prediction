@@ -102,7 +102,6 @@ class AQIPredictionFlow(FlowSpec):
 
     @step
     def end(self):
-        print("AQI prediction pipeline complete.")
 
 if __name__ == '__main__':
     AQIPredictionFlow()

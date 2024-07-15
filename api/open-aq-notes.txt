@@ -1,0 +1,67 @@
+- use v3 alpha
+https://docs.openaq.org/reference/introduction-1
+
+- countries
+
+- sensor locations
+    - spatial location of an air quality monitoring station
+    - may record many parameters
+
+- sensor manufacturers
+
+parameters
+    - air quality measurements
+    - timestamp
+    - mobile measurements may also include long & lat
+    A Parameter in the OpenAQ platform is the type of particle or gaseous pollutant measured.
+
+Currently OpenAQ supports the following Parameters:
+
+- PM2.5 - Particulate matter smaller than 2.5 microns
+    - mass concentration (i.e. µg/m³)
+    - count (i.e. particles/cm³ )
+- PM4 - Particulate matter smaller than 4 microns
+    - mass concentration (i.e. µg/m³)
+    - count (i.e. particles/cm³ )
+- PM10- Particulate matter smaller than 10 microns
+    - mass concentration (i.e. µg/m³)
+    - count (i.e. particles/cm³ )
+- NO - Nitrogen Monoxide
+- NO₂ - Nitrogen Dioxide
+- CH₄ - Methane
+    - Concentration (i.e. ppm)
+- SO₂ - Sulfur Dioxide
+- O₃ - Ozone
+- CO - Carbon Monoxide
+- BC - Black Carbon
+
+
+DEFINITIONS
+
+PM10 (Particulate Matter up to 10 micrometers):
+Measures particles with a diameter of 10 micrometers or less.
+Used to assess the level of larger particulate pollution in the air which can be inhaled into the lungs.
+
+PM2.5 (Particulate Matter up to 2.5 micrometers):
+Measures finer particles with a diameter of 2.5 micrometers or less.
+These particles can penetrate deeper into the lungs and are a major health concern as they can affect heart and lung function.
+
+O3 (Ozone):
+Measures the concentration of ozone in the air in parts per million (ppm).
+High levels of ozone can cause respiratory issues and other health problems, especially during warmer months when ozone can reach harmful levels.
+
+PM1 (Particulate Matter up to 1 micrometer):
+Measures the smallest particulate matter with a diameter of 1 micrometer or less.
+These particles are capable of penetrating the deepest parts of the lungs and can enter the bloodstream, posing significant health risks.
+
+Relative Humidity:
+Measures the amount of moisture in the air as a percentage.
+Humidity levels can influence the concentration and effects of other pollutants, as well as human comfort and health.
+
+Temperature:
+Measures the ambient air temperature in degrees Celsius.
+Temperature can affect the chemical reactions of pollutants in the air and has a direct impact on the comfort and well-being of individuals.
+
+UM003 (Ultrafine Particles of size 0.003 micrometers):
+Measures ultrafine particles smaller than 0.003 micrometers in terms of particle count per cubic centimeter.
+These ultrafine particles are significant as they represent the smallest and potentially most harmful particulates due to their ability to enter cellular membranes.
