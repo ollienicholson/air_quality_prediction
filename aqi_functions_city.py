@@ -30,7 +30,9 @@ def fetch_city_data(
     - Returns a Pandas DataFrame
     API docs: https://docs.openaq.org/docs/introduction
     '''
+    import os
     print("Fetching city data...")
+    print("Current working dir: ", os.getcwd)
     url = f'https://api.openaq.org/v2/measurements'
     params = {
         'city': city,
@@ -58,8 +60,6 @@ def fetch_city_data(
                 time.sleep(1)  # Wait 1 second before retrying
             else:
                 raise # re-raises last exception if all retries fail
-
-
 
 
 

@@ -28,7 +28,7 @@ class AQIPredictionFlow(FlowSpec):
     @step
     def start(self):
         
-        print("Starting data flow...")
+        print("Starting data pipeline...")
         
         import os
         
@@ -57,7 +57,7 @@ class AQIPredictionFlow(FlowSpec):
 
     @step
     def fetch_data(self):
-        print("Fetching data...")
+        print("Fetching data for pipeline...")
         self.dataframe = fetch_city_data(
             self.city, 
             self.start_date, 
@@ -70,19 +70,19 @@ class AQIPredictionFlow(FlowSpec):
 
     @step
     def clean_data(self):
-        print("Cleaning data...")
+        print("Cleaning data for pipeline...")
         self.clean_dataframe = clean_city_data(self.dataframe)
         self.next(self.train_model)
 
     @step
     def train_model(self):
-        print("Training model...")
+        print("Training model for pipeline...")
         self.model = train_RandomForestRegressor_model(self.clean_dataframe)
         self.next(self.predict_and_plot)
 
     @step
     def predict_and_plot(self):
-        print("Running Predict and Plot...")
+        print("Running Predict and Plot for pipeline...")
         
         city_predict_and_plot(
             self.model, 

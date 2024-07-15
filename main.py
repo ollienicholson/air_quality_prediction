@@ -40,6 +40,7 @@ num_prediction_days = 360 # in days
 
 try:
     data = fetch_city_data(city, start_date, end_date, limit, retries, csv_output_directory)
+    print("Current working dir: ", os.getcwd)
     logging.info("Fetched city data")
 
     cleaned_data = clean_city_data(data)

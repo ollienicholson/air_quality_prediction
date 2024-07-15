@@ -25,3 +25,6 @@ environment.yml
 # cron job log files
 # scheduled daily 10:30am
 /logs
+
+# keys
+/api-keys
