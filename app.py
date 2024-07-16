@@ -1,26 +1,29 @@
 # app.py
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
 
-@app.route('/contact')
+
+@app.route("/contact")
 def contact():
-    return render_template('contact.html')
+    return render_template("contact.html")
 
-@app.route('/submit_contact', methods=['POST'])
+
+@app.route("/submit_contact", methods=["POST"])
 def submit_contact():
-    name = request.form['name']
-    email = request.form['email']
-    message = request.form['message']
-    
+    name = request.form["name"]
+    email = request.form["email"]
+    message = request.form["message"]
+
     # Handle the form submission logic here
     print(f"Received contact form submission from {name} ({email}): {message}")
-    return redirect(url_for('index'))
+    return redirect(url_for("index"))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run(debug=True)
-    
