@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import requests
 import seaborn as sns
+import logging
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
@@ -31,8 +32,7 @@ def fetch_city_data(
     API docs: https://docs.openaq.org/docs/introduction
     '''
     import os
-    print("Fetching city data...")
-    print("Current working dir: ", os.getcwd)
+    # print("Fetching city data...")
     url = f'https://api.openaq.org/v2/measurements'
     params = {
         'city': city,
@@ -87,7 +87,7 @@ def clean_city_data(data: pd.DataFrame) -> pd.DataFrame:
     - Returns a DataFrame
     '''
     try:
-        print("Cleaning city data...")
+        # print("Cleaning city data...")
         
         data = data[['date', 'value', 'unit', 'parameter']]
         
@@ -116,7 +116,7 @@ def plot_city_data(data: pd.DataFrame, city:str, dir_name: str) -> None:
     Generate and save city data plot
     '''
     try:
-        print("Plotting city data...")
+        # print("Plotting city data...")
         
         plt.figure(figsize=(12, 6))
         sns.lineplot(data=data)
@@ -152,7 +152,7 @@ def train_RandomForestRegressor_model(data: pd.DataFrame):
     '''
     
     try:
-        print("Training Random Forest Regressor model for city data...")
+        # print("Training Random Forest Regressor model for city data...")
         
         data['day_of_year'] = data.index.dayofyear
         X = data[['day_of_year']]
@@ -166,7 +166,7 @@ def train_RandomForestRegressor_model(data: pd.DataFrame):
 
         y_pred = model.predict(X_test)
         mse = round(mean_squared_error(y_test, y_pred), 3)
-        print(f'Mean Squared Error: {mse}')
+        logging.info(f'Mean Squared Error: {mse}')
 
         return model
     
@@ -180,7 +180,7 @@ def city_predict_and_plot(model, data: pd.DataFrame, city: str, dir_name: str, d
     Performs predictions on future air quality index
     '''
     try:
-        print("Running prediction and plot for city data...")
+        # print("Running prediction and plot for city data...")
         
         future_dates = pd.date_range(start=data.index[-1], periods=days)
         future_data = pd.DataFrame(

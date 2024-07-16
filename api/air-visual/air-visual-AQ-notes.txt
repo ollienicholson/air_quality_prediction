@@ -6,30 +6,30 @@ snapshot of the data captured
 ts: "2019-08-05T06:00:00.000Z"
 
 Timestamp: The date and time of the data, which is August 5, 2019, at 06:00 UTC.
+
 aqius: 68
-
 Air Quality Index US: This is the AQI value based on US standards, and a value of 68 typically indicates moderate air quality. People who are unusually sensitive to air pollution may experience mild effects, but these are generally not a concern for the broader population.
+
 aqicn: 29
-
 Air Quality Index China: This is the AQI value based on China’s standards, and a value of 29 falls into the 'Good' category, indicating air quality conditions that pose little or no risk.
+
 tp: 22
-
 Temperature: The current temperature at the time of the reading, 22 degrees Celsius.
+
 tp_min: 22
-
 Minimum Temperature: The minimum recorded temperature at that time was also 22 degrees Celsius, indicating stable temperature conditions during the measurement.
+
 pr: 962
-
 Pressure: The atmospheric pressure measured in hectopascals (hPa), which is 962 hPa. This is somewhat low, suggesting the possibility of a weather system nearby.
+
 hu: 74
-
 Humidity: The relative humidity percentage, which is 74%. This indicates a relatively high moisture content in the air.
+
 ws: 0
-
 Wind Speed: The wind speed at the time of the measurement, recorded at 0 meters per second, indicating calm conditions with no wind.
+
 wd: 253
-
 Wind Direction: The wind direction, measured in degrees from true north, at 253 degrees, which corresponds to winds blowing from the west-southwest.
-ic: "10n"
 
+ic: "10n"
 Weather Icon Code: This code is typically used to represent the weather condition visually in weather applications. "10n" specifically usually denotes rain at night.

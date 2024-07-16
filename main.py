@@ -39,8 +39,8 @@ retries = 3
 num_prediction_days = 360 # in days
 
 try:
+    logging.info("Running city AQ pipeline at:", os.getcwd())
     data = fetch_city_data(city, start_date, end_date, limit, retries, csv_output_directory)
-    print("Current working dir: ", os.getcwd)
     logging.info("Fetched city data")
 
     cleaned_data = clean_city_data(data)
@@ -55,7 +55,7 @@ try:
     city_predict_and_plot(model, cleaned_data, city, image_output_directory, num_prediction_days)
     logging.info("Prediction ran. Plotted predicted city data")
     
-    print("AQI functions for city data completed")
+    logging.info("AQI functions for city data completed")
     
 except Exception as e:
     logging.error("Error occurred: %s", str(e))
