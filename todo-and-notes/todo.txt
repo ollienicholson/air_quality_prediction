@@ -13,6 +13,8 @@ return results to the browser when user inteacts with model
 
 - have a button for the user to press run
 
+- let the user enter the inputs
+
 - let the user choose from a list of city inputs
 
 - let the user choose the future prediction duration

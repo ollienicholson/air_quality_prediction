@@ -29,7 +29,7 @@ def save_file(dir_name: str, file_name: str, city: str):
         
         # Save the plot to the data directory
         plt.savefig(f'{dir_name}/{final_filename}')
-        print(f"Plot saved to {dir_name}/{final_filename}")
+        # print(f"Plot saved to {dir_name}/{final_filename}")
         
     except Exception as e:
         print(f"save_file ERROR: {e}")

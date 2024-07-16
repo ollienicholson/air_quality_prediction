@@ -1,0 +1,2112 @@
+{
+    "meta": {
+        "name": "openaq-api",
+        "license": "",
+        "website": "/",
+        "page": 1,
+        "limit": 100,
+        "found": ">100"
+    },
+    "results": [
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 15.0,
+            "date": {
+                "utc": "2024-06-06T20:00:00+00:00",
+                "local": "2024-06-06T16:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 15.0,
+            "date": {
+                "utc": "2024-06-06T19:00:00+00:00",
+                "local": "2024-06-06T15:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 15.0,
+            "date": {
+                "utc": "2024-06-06T18:00:00+00:00",
+                "local": "2024-06-06T14:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 16.0,
+            "date": {
+                "utc": "2024-06-06T17:00:00+00:00",
+                "local": "2024-06-06T13:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 16.0,
+            "date": {
+                "utc": "2024-06-06T16:00:00+00:00",
+                "local": "2024-06-06T12:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 17.0,
+            "date": {
+                "utc": "2024-06-06T15:00:00+00:00",
+                "local": "2024-06-06T11:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 17.0,
+            "date": {
+                "utc": "2024-06-06T14:00:00+00:00",
+                "local": "2024-06-06T10:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 18.0,
+            "date": {
+                "utc": "2024-06-06T13:00:00+00:00",
+                "local": "2024-06-06T09:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 18.0,
+            "date": {
+                "utc": "2024-06-06T12:00:00+00:00",
+                "local": "2024-06-06T08:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 18.0,
+            "date": {
+                "utc": "2024-06-06T11:00:00+00:00",
+                "local": "2024-06-06T07:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 19.0,
+            "date": {
+                "utc": "2024-06-06T10:00:00+00:00",
+                "local": "2024-06-06T06:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 19.0,
+            "date": {
+                "utc": "2024-06-06T09:00:00+00:00",
+                "local": "2024-06-06T05:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 20.0,
+            "date": {
+                "utc": "2024-06-06T08:00:00+00:00",
+                "local": "2024-06-06T04:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 20.0,
+            "date": {
+                "utc": "2024-06-06T07:00:00+00:00",
+                "local": "2024-06-06T03:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 20.0,
+            "date": {
+                "utc": "2024-06-06T06:00:00+00:00",
+                "local": "2024-06-06T02:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 20.0,
+            "date": {
+                "utc": "2024-06-06T05:00:00+00:00",
+                "local": "2024-06-06T01:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 21.0,
+            "date": {
+                "utc": "2024-06-06T04:00:00+00:00",
+                "local": "2024-06-06T00:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 21.0,
+            "date": {
+                "utc": "2024-06-06T03:00:00+00:00",
+                "local": "2024-06-05T23:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 22.0,
+            "date": {
+                "utc": "2024-06-06T02:00:00+00:00",
+                "local": "2024-06-05T22:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 23.0,
+            "date": {
+                "utc": "2024-06-06T01:00:00+00:00",
+                "local": "2024-06-05T21:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 23.0,
+            "date": {
+                "utc": "2024-06-06T00:00:00+00:00",
+                "local": "2024-06-05T20:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 24.0,
+            "date": {
+                "utc": "2024-06-05T23:00:00+00:00",
+                "local": "2024-06-05T19:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 24.0,
+            "date": {
+                "utc": "2024-06-05T22:00:00+00:00",
+                "local": "2024-06-05T18:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 24.0,
+            "date": {
+                "utc": "2024-06-05T21:00:00+00:00",
+                "local": "2024-06-05T17:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 25.0,
+            "date": {
+                "utc": "2024-06-05T20:00:00+00:00",
+                "local": "2024-06-05T16:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 25.0,
+            "date": {
+                "utc": "2024-06-05T19:00:00+00:00",
+                "local": "2024-06-05T15:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 25.0,
+            "date": {
+                "utc": "2024-06-05T18:00:00+00:00",
+                "local": "2024-06-05T14:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 26.0,
+            "date": {
+                "utc": "2024-06-05T17:00:00+00:00",
+                "local": "2024-06-05T13:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 26.0,
+            "date": {
+                "utc": "2024-06-05T16:00:00+00:00",
+                "local": "2024-06-05T12:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 27.0,
+            "date": {
+                "utc": "2024-06-05T15:00:00+00:00",
+                "local": "2024-06-05T11:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 28.0,
+            "date": {
+                "utc": "2024-06-05T14:00:00+00:00",
+                "local": "2024-06-05T10:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 31.0,
+            "date": {
+                "utc": "2024-06-05T13:00:00+00:00",
+                "local": "2024-06-05T09:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 34.0,
+            "date": {
+                "utc": "2024-06-05T12:00:00+00:00",
+                "local": "2024-06-05T08:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 36.0,
+            "date": {
+                "utc": "2024-06-05T11:00:00+00:00",
+                "local": "2024-06-05T07:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 37.0,
+            "date": {
+                "utc": "2024-06-05T10:00:00+00:00",
+                "local": "2024-06-05T06:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 38.0,
+            "date": {
+                "utc": "2024-06-05T09:00:00+00:00",
+                "local": "2024-06-05T05:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 39.0,
+            "date": {
+                "utc": "2024-06-05T08:00:00+00:00",
+                "local": "2024-06-05T04:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 40.0,
+            "date": {
+                "utc": "2024-06-05T07:00:00+00:00",
+                "local": "2024-06-05T03:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 42.0,
+            "date": {
+                "utc": "2024-06-05T06:00:00+00:00",
+                "local": "2024-06-05T02:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 43.0,
+            "date": {
+                "utc": "2024-06-05T05:00:00+00:00",
+                "local": "2024-06-05T01:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 45.0,
+            "date": {
+                "utc": "2024-06-05T04:00:00+00:00",
+                "local": "2024-06-05T00:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 46.0,
+            "date": {
+                "utc": "2024-06-05T03:00:00+00:00",
+                "local": "2024-06-04T23:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 49.0,
+            "date": {
+                "utc": "2024-06-05T02:00:00+00:00",
+                "local": "2024-06-04T22:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 57.0,
+            "date": {
+                "utc": "2024-06-05T01:00:00+00:00",
+                "local": "2024-06-04T21:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 60.0,
+            "date": {
+                "utc": "2024-06-05T00:00:00+00:00",
+                "local": "2024-06-04T20:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 80.0,
+            "date": {
+                "utc": "2024-06-04T23:00:00+00:00",
+                "local": "2024-06-04T19:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 95.0,
+            "date": {
+                "utc": "2024-06-04T22:00:00+00:00",
+                "local": "2024-06-04T18:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 101.0,
+            "date": {
+                "utc": "2024-06-04T21:00:00+00:00",
+                "local": "2024-06-04T17:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 104.0,
+            "date": {
+                "utc": "2024-06-04T20:00:00+00:00",
+                "local": "2024-06-04T16:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 107.0,
+            "date": {
+                "utc": "2024-06-04T19:00:00+00:00",
+                "local": "2024-06-04T15:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 107.0,
+            "date": {
+                "utc": "2024-06-04T18:00:00+00:00",
+                "local": "2024-06-04T14:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 107.0,
+            "date": {
+                "utc": "2024-06-04T17:00:00+00:00",
+                "local": "2024-06-04T13:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 108.0,
+            "date": {
+                "utc": "2024-06-04T16:00:00+00:00",
+                "local": "2024-06-04T12:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 109.0,
+            "date": {
+                "utc": "2024-06-04T15:00:00+00:00",
+                "local": "2024-06-04T11:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 111.0,
+            "date": {
+                "utc": "2024-06-04T14:00:00+00:00",
+                "local": "2024-06-04T10:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 112.0,
+            "date": {
+                "utc": "2024-06-04T13:00:00+00:00",
+                "local": "2024-06-04T09:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 114.0,
+            "date": {
+                "utc": "2024-06-04T12:00:00+00:00",
+                "local": "2024-06-04T08:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 115.0,
+            "date": {
+                "utc": "2024-06-04T11:00:00+00:00",
+                "local": "2024-06-04T07:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 115.0,
+            "date": {
+                "utc": "2024-06-04T10:00:00+00:00",
+                "local": "2024-06-04T06:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 112.0,
+            "date": {
+                "utc": "2024-06-04T09:00:00+00:00",
+                "local": "2024-06-04T05:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 112.0,
+            "date": {
+                "utc": "2024-06-04T08:00:00+00:00",
+                "local": "2024-06-04T04:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 111.0,
+            "date": {
+                "utc": "2024-06-04T07:00:00+00:00",
+                "local": "2024-06-04T03:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 111.0,
+            "date": {
+                "utc": "2024-06-04T06:00:00+00:00",
+                "local": "2024-06-04T02:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 111.0,
+            "date": {
+                "utc": "2024-06-04T05:00:00+00:00",
+                "local": "2024-06-04T01:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 111.0,
+            "date": {
+                "utc": "2024-06-04T04:00:00+00:00",
+                "local": "2024-06-04T00:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 111.0,
+            "date": {
+                "utc": "2024-06-04T03:00:00+00:00",
+                "local": "2024-06-03T23:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 111.0,
+            "date": {
+                "utc": "2024-06-04T02:00:00+00:00",
+                "local": "2024-06-03T22:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 107.0,
+            "date": {
+                "utc": "2024-06-04T01:00:00+00:00",
+                "local": "2024-06-03T21:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 108.0,
+            "date": {
+                "utc": "2024-06-04T00:00:00+00:00",
+                "local": "2024-06-03T20:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 97.0,
+            "date": {
+                "utc": "2024-06-03T23:00:00+00:00",
+                "local": "2024-06-03T19:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 89.0,
+            "date": {
+                "utc": "2024-06-03T22:00:00+00:00",
+                "local": "2024-06-03T18:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 85.0,
+            "date": {
+                "utc": "2024-06-03T21:00:00+00:00",
+                "local": "2024-06-03T17:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 83.0,
+            "date": {
+                "utc": "2024-06-03T20:00:00+00:00",
+                "local": "2024-06-03T16:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 81.0,
+            "date": {
+                "utc": "2024-06-03T19:00:00+00:00",
+                "local": "2024-06-03T15:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 81.0,
+            "date": {
+                "utc": "2024-06-03T18:00:00+00:00",
+                "local": "2024-06-03T14:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 82.0,
+            "date": {
+                "utc": "2024-06-03T17:00:00+00:00",
+                "local": "2024-06-03T13:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 81.0,
+            "date": {
+                "utc": "2024-06-03T16:00:00+00:00",
+                "local": "2024-06-03T12:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 80.0,
+            "date": {
+                "utc": "2024-06-03T15:00:00+00:00",
+                "local": "2024-06-03T11:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 77.0,
+            "date": {
+                "utc": "2024-06-03T14:00:00+00:00",
+                "local": "2024-06-03T10:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 73.0,
+            "date": {
+                "utc": "2024-06-03T13:00:00+00:00",
+                "local": "2024-06-03T09:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 69.0,
+            "date": {
+                "utc": "2024-06-03T12:00:00+00:00",
+                "local": "2024-06-03T08:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 65.0,
+            "date": {
+                "utc": "2024-06-03T11:00:00+00:00",
+                "local": "2024-06-03T07:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 64.0,
+            "date": {
+                "utc": "2024-06-03T10:00:00+00:00",
+                "local": "2024-06-03T06:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 63.0,
+            "date": {
+                "utc": "2024-06-03T09:00:00+00:00",
+                "local": "2024-06-03T05:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 62.0,
+            "date": {
+                "utc": "2024-06-03T08:00:00+00:00",
+                "local": "2024-06-03T04:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 62.0,
+            "date": {
+                "utc": "2024-06-03T07:00:00+00:00",
+                "local": "2024-06-03T03:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 62.0,
+            "date": {
+                "utc": "2024-06-03T06:00:00+00:00",
+                "local": "2024-06-03T02:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 63.0,
+            "date": {
+                "utc": "2024-06-03T05:00:00+00:00",
+                "local": "2024-06-03T01:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 66.0,
+            "date": {
+                "utc": "2024-06-03T04:00:00+00:00",
+                "local": "2024-06-03T00:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 70.0,
+            "date": {
+                "utc": "2024-06-03T03:00:00+00:00",
+                "local": "2024-06-02T23:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 73.0,
+            "date": {
+                "utc": "2024-06-03T02:00:00+00:00",
+                "local": "2024-06-02T22:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 74.0,
+            "date": {
+                "utc": "2024-06-03T01:00:00+00:00",
+                "local": "2024-06-02T21:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 72.0,
+            "date": {
+                "utc": "2024-06-03T00:00:00+00:00",
+                "local": "2024-06-02T20:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 67.0,
+            "date": {
+                "utc": "2024-06-02T23:00:00+00:00",
+                "local": "2024-06-02T19:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 62.0,
+            "date": {
+                "utc": "2024-06-02T22:00:00+00:00",
+                "local": "2024-06-02T18:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 60.0,
+            "date": {
+                "utc": "2024-06-02T21:00:00+00:00",
+                "local": "2024-06-02T17:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 60.0,
+            "date": {
+                "utc": "2024-06-02T20:00:00+00:00",
+                "local": "2024-06-02T16:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 59.0,
+            "date": {
+                "utc": "2024-06-02T19:00:00+00:00",
+                "local": "2024-06-02T15:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 58.0,
+            "date": {
+                "utc": "2024-06-02T18:00:00+00:00",
+                "local": "2024-06-02T14:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        },
+        {
+            "locationId": 26,
+            "location": "Inpesca",
+            "parameter": "pm10",
+            "value": 57.0,
+            "date": {
+                "utc": "2024-06-02T17:00:00+00:00",
+                "local": "2024-06-02T13:00:00-04:00"
+            },
+            "unit": "\u00b5g/m\u00b3",
+            "coordinates": {
+                "latitude": -36.737202,
+                "longitude": -73.104427
+            },
+            "country": "CL",
+            "city": null,
+            "isMobile": false,
+            "isAnalysis": null,
+            "entity": "Governmental Organization",
+            "sensorType": "reference grade"
+        }
+    ]
+}

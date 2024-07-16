@@ -31,7 +31,6 @@ def fetch_city_data(
     - Returns a Pandas DataFrame
     API docs: https://docs.openaq.org/docs/introduction
     '''
-    import os
     # print("Fetching city data...")
     url = f'https://api.openaq.org/v2/measurements'
     params = {
