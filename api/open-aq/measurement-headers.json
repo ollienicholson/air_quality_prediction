@@ -1,0 +1,19 @@
+{
+    "Content-Type": "application/json",
+    "Content-Length": "1253",
+    "Connection": "keep-alive",
+    "Date": "Wed, 17 Jul 2024 03:42:05 GMT",
+    "Ratelimit-Policy": "10;w=60",
+    "Cache-Control": "public, max-age=900",
+    "Content-Encoding": "gzip",
+    "Ratelimit-Limit": "10",
+    "Ratelimit-Remaining": "9",
+    "Ratelimit-Reset": "60",
+    "Apigw-Requestid": "bCaOGjsdoAMEZyQ=",
+    "Vary": "Accept-Encoding",
+    "X-Cache": "Hit from cloudfront",
+    "Via": "1.1 bfd9e2d4a0735ccef099dd06f2aa9da8.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "MEL50-C1",
+    "X-Amz-Cf-Id": "JJpbkbfnFJqe0vXL8L3gLj0UBtPDHG8bKf4lgmlYTBTcufx_bitUnA==",
+    "Age": "84"
+}

@@ -53,12 +53,15 @@ def fetch_city_data(
 url = "https://api.openaq.org/v2/measurements?date_from=2024-05-30T00%3A00%3A00Z&date_to=2024-06-06T20%3A45%3A00Z&limit=100&page=1&offset=0&sort=desc&radius=1000&order_by=datetime"
 
 headers = {"accept": "application/json"}
-
 response = requests.get(url, headers=headers)
+measurement_data = response.json()
+measurement_file = "measurement-data.json"
 
-data = response.json()
+with open(measurement_file, "w") as file:
+    json.dump(measurement_data, file, indent=4)
 
-file_path = "./api/open-aq/v2-measurement-test.json"
 
-with open(file_path, "w") as file:
-    json.dump(data, file, indent=4)
+header_data = dict(response.headers)
+header_file = "measurement-headers.json"
+with open(header_file, "w") as file:
+    json.dump(header_data, file, indent=4)
